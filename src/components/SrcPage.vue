@@ -1,5 +1,5 @@
 <template>
-  <SrcLink :href="combinePaths('/example/vue-press/src',path)">
+  <SrcLink :href="combinePaths('/src/pages',path)">
     <Iconify icon="logos:vue" class="w-5 h-5 inline" />
   </SrcLink>
 </template>

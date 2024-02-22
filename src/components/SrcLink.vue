@@ -9,7 +9,7 @@
 import { computed } from "vue"
 import { lastRightPart, combinePaths } from "@servicestack/client"
 
-const baseUrl = "https://github.com/ServiceStack/vite-plugin-press/blob/main"
+const baseUrl = "https://github.com/ServiceStack/press-vue/blob/main"
 
 const props = defineProps<{
   href: string

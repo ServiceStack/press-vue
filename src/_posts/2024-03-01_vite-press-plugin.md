@@ -166,6 +166,42 @@ Supporting all Blog features requires several different pages to render each of 
 | Display Posts by Tag | [/posts/tagged/markdown](/posts/tagged/markdown) | [\[tag\].vue](https://github.com/NetCoreTemplates/vue-spa/blob/main/MyApp.Client/src/pages/posts/tagged/%5Btag%5D.vue) | [\[tag\].tsx](https://github.com/NetCoreTemplates/react-spa/blob/main/MyApp.Client/src/pages/posts/tagged/%5Btag%5D.tsx) |
 | Display Posts by Year | [/posts/year/2024](/posts/year/2024) | [\[year\].vue](https://github.com/NetCoreTemplates/vue-spa/blob/main/MyApp.Client/src/pages/posts/year/%5Byear%5D.vue) | [\[year\].tsx](https://github.com/NetCoreTemplates/react-spa/blob/main/MyApp.Client/src/pages/posts/year/%5Byear%5D.tsx) |
 
+#### Configuration
+
+Additional information about the Website Blog is maintained in `_posts/config.json`
+
+```json
+{
+  "localBaseUrl": "http://localhost:5173",
+  "publicBaseUrl": "https://press-vue.web-templates.io",
+  "siteTwitter": "@Vue",
+  "blogTitle": "From the blog",
+  "blogDescription": "Writing on software design and aerospace industry.",
+  "blogEmail": "email@example.org (Vue)",
+  "blogImageUrl": "https://servicestack.net/img/logo.png"
+}
+```
+
+#### Authors
+
+Whilst information about Post Authors are maintained in `_posts/authors.json`
+
+```json
+[
+  {
+    "name": "Lucy Bates",
+    "email": "lucy@email.org",
+    "bio": "Writing on software design and aerospace industry.",
+    "profileUrl": "/img/profiles/user1.svg",
+    "twitterUrl": "https://twitter.com/lucy",
+    "threadsUrl": "https://threads.net/@lucy",
+    "gitHubUrl": "https://github.com/lucy"
+  },
+]
+```
+
+To associate an Author the **name** property is used to match a posts frontmatter **author**.
+
 ### General Features
 
 Most unique markdown features are captured in their Markdown's frontmatter metadata, but in general these features

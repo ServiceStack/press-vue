@@ -9,6 +9,13 @@
       <p class="mx-auto mt-3 max-w-md text-base text-gray-500 dark:text-gray-400 sm:text-lg md:mt-5 md:max-w-3xl md:text-xl">
         Welcome to your new Vue SPA App
       </p>
+      <div class="mx-auto mt-5 max-w-md sm:flex sm:justify-center md:mt-8">
+        <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
+          <a href="https://docs.servicestack.net/vue/" class="flex w-full items-center justify-center rounded-md border border-transparent bg-green-600 px-8 py-3 text-base font-medium text-white hover:bg-green-700 md:py-4 md:px-10 md:text-lg">
+            Vue Component Gallery
+          </a>
+        </div>
+      </div>
     </div>
   </div>
   
@@ -88,7 +95,7 @@
       learnMore="https://docs.servicestack.net/vue/" />
 
   <div class="my-8 flex justify-center gap-x-4">
-    <SrcPage path="pages/index.vue" />
+    <SrcPage path="index.vue" />
   </div>
 
 </template>
