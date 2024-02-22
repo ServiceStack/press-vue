@@ -11,7 +11,7 @@ import { setupLayouts } from 'virtual:generated-layouts'
 import press from "virtual:press"
 import { Icon } from '@iconify/vue'
 
-import LiteYoutube from "@/components/LiteYouTube"
+import LiteYouTube from "@/components/LiteYouTube"
 import Include from "@/components/Include.vue"
 
 const app = createApp(App)
@@ -57,7 +57,7 @@ app
     .use(router)
     .use(ServiceStackVue)
     .provide('press', press)
-    .component('LiteYouTube', LiteYoutube)
+    .component('LiteYouTube', LiteYouTube)
     .component('Iconify', Icon)
     .component('Include', Include)
     .mount('#app')
