@@ -2,8 +2,7 @@
     "blog": [
         "/meta/2024/blog.json",
         "/meta/2023/blog.json",
-        "/meta/2022/blog.json",
-        "/meta/2021/blog.json"
+        "/meta/2022/blog.json"
     ],
     "videos": [
         "/meta/2023/videos.json"

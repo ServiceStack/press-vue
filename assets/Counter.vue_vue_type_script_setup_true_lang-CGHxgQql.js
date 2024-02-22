@@ -1,0 +1,1 @@
+import{d as n,j as o,o as r,c as s,t as a}from"./index-CQ2ud7K-.js";const _=n({__name:"Counter",setup(c){const e=o(1);return(p,t)=>(r(),s("b",{onClick:t[0]||(t[0]=u=>e.value++)},"Counter "+a(e.value),1))}});export{_};
