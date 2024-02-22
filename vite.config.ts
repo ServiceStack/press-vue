@@ -17,36 +17,6 @@ import Markdown from 'unplugin-vue-markdown/vite'
 import svgLoader from 'vite-svg-loader'
 import configureMarkdown from './vite.markdown'
 
-const baseFolder =
-    env.APPDATA !== undefined && env.APPDATA !== ''
-        ? `${env.APPDATA}/ASP.NET/https`
-        : `${env.HOME}/.aspnet/https`;
-
-const certificateArg = process.argv.map(arg => arg.match(/--name=(?<value>.+)/i)).filter(Boolean)[0]
-const certificateName = certificateArg ? certificateArg!.groups!.value : "myapp.client"
-
-if (!certificateName) {
-    console.error('Invalid certificate name. Run this script in the context of an npm/yarn script or pass --name=<<app>> explicitly.')
-    process.exit(-1)
-}
-
-const certFilePath = path.join(baseFolder, `${certificateName}.pem`)
-const keyFilePath = path.join(baseFolder, `${certificateName}.key`)
-
-if (!fs.existsSync(certFilePath) || !fs.existsSync(keyFilePath)) {
-    if (0 !== child_process.spawnSync('dotnet', [
-        'dev-certs',
-        'https',
-        '--export-path',
-        certFilePath,
-        '--format',
-        'Pem',
-        '--no-password',
-    ], { stdio: 'inherit', }).status) {
-        throw new Error("Could not create certificate.")
-    }
-}
-
 const currentDir = path.dirname(fileURLToPath(import.meta.url))
 
 // https://vitejs.dev/config/
@@ -127,13 +97,6 @@ export default defineConfig({
             '@': fileURLToPath(new URL('./src', import.meta.url)),
             '@unhead/vue': path.join(currentDir, './node_modules/@unhead/vue'),
             '@servicestack/vue': path.join(currentDir, './node_modules/@servicestack/vue'),
-        }
-    },
-    server: {
-        port: 5173,
-        https: {
-            key: fs.readFileSync(keyFilePath),
-            cert: fs.readFileSync(certFilePath),
         }
     }
 })
