@@ -7,14 +7,6 @@
       </div>
 
       <div class="pb-6">
-        <RouterLink to="/features" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">Features</RouterLink>
-      </div>
-
-      <div class="pb-6">
-        <RouterLink to="/deploy" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">Deploy</RouterLink>
-      </div>
-
-      <div class="pb-6">
         <RouterLink to="/posts" class="text-sm leading-6 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-50">Archive</RouterLink>
       </div>
 
@@ -33,7 +25,7 @@
              class="mx-3 bg-black hover:bg-white hover:text-black border border-black text-white font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0">
             Read Documentation
           </a>
-          <a href="https://github.com/NetCoreTemplates/vue-spa"
+          <a href="https://github.com/NetCoreTemplates/press-vue"
              class="mx-3 font-bold hover:underline">
             View on GitHub
           </a>
