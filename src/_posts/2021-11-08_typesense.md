@@ -374,14 +374,3 @@ The results are **excellent**, [see for yourself](https://docs.servicestack.net)
 It handles typos really well, it is very quick and has become the fastest way to navigate our extensive documentation.
 
 We have been super impressed with the search experience that Typesense enabled, the engineers behind the Typesense product have created something with a better developer experience than even paid SaaS options and provided it with a clear value proposition.
-
-## ServiceStack a Sponsor of Typesense
-
-We were so impressed by the amazing results, that as a way to show our thanks we've become sponsors of 
-[Typesense on GitHub sponsors](https://github.com/sponsors/typesense) 🎉 🎉 
-
-We know how challenging it can be to try make open source software sustainable that if you find yourself using 
-amazing open source products like Typesense which you want to continue to see flourish, we encourage finding 
-out how you or your organization can support them, either via direct contributions or by helping spread the
-word with public posts (like this) sharing your experiences as their continued success will encourage further
-investments that ultimately benefits the project and all its users.
