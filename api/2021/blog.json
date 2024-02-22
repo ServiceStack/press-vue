@@ -1,0 +1,18 @@
+[
+    {
+        "slug": "typesense",
+        "fileName": "typesense.md",
+        "date": "2021-11-08",
+        "tags": [
+            "dev",
+            "docs"
+        ],
+        "wordCount": 4780,
+        "lineCount": 379,
+        "title": "Real-time search with Typesense",
+        "summary": "As part of migrating docs to VitePress we've added UX improvements like instant search powered by Typesense!",
+        "author": "Lucy Bates",
+        "image": "https://images.unsplash.com/photo-1473163928189-364b2c4e1135?crop=entropy&fit=crop&h=1000&w=2000",
+        "url": "/posts/typesense"
+    }
+]
