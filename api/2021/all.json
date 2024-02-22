@@ -8,8 +8,8 @@
                 "dev",
                 "docs"
             ],
-            "wordCount": 4780,
-            "lineCount": 379,
+            "wordCount": 4665,
+            "lineCount": 369,
             "title": "Real-time search with Typesense",
             "summary": "As part of migrating docs to VitePress we've added UX improvements like instant search powered by Typesense!",
             "author": "Lucy Bates",
