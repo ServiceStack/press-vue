@@ -75,7 +75,7 @@
   <div class="text-center text-xl">
       Opinionated Vue template for a productive out-of-the-box development UX
   </div>
-  <div class="prose lg:prose-xl mx-auto">
+  <div class="prose dark:prose-invert lg:prose-xl mx-auto">
     <Include src="features.md" />
   </div>
 
