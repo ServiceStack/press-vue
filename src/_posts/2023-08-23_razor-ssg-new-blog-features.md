@@ -79,11 +79,11 @@ Blog Posts can now embed any global Vue Components directly in its Markdown, e.g
 Just like Pages and Docs they can also include specific JavaScript **.mjs** or **.css** in the `/wwwroot/posts` folder
 which will only be loaded for that post:
 
-<file-layout :files="{
-wwwroot: {
-posts: { _: ['<slug>.mjs','<slug>.css'] },
-}
-}"></file-layout>
+<FileLayout :files="{
+    wwwroot: {
+        posts: { _: ['<slug>.mjs','<slug>.css'] },
+    }
+}"/>
 
 Now posts that need it can dynamically load large libraries like [Chart.js](https://www.chartjs.org) and use it
 inside a custom Vue component by creating a custom `/posts/<slug>.mjs` that exports what components and features

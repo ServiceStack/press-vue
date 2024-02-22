@@ -1,6 +1,6 @@
 ---
 title: Vite Press Plugin
-summary: Introducing the Vite Press Plugin
+summary: Introducing the Vite Press Plugin for Vite Vue & React Apps
 author: Lucy Bates
 tags: [docs, markdown]
 image: https://images.unsplash.com/photo-1524668951403-d44b28200ce0?crop=entropy&fit=crop&h=1000&w=2000
@@ -52,12 +52,12 @@ and rendered with [Markdig](https://github.com/xoofx/markdig) and either Razor P
 
 The content for each Markdown feature is maintained within its own feature folder with a `_` prefix:
 
-<file-layout :files="{
+<FileLayout :files="{
     _includes: {},
     _posts: {},
     _videos: {},
     _whatsnew: {},
-}"></file-layout>
+}"/>
 
 #### Markdown Document Structure
 
@@ -146,14 +146,14 @@ This `VirtualPress` metadata is used to power all markdown features.
 The blog maintains its markdown posts in a flat  [/_posts](https://github.com/NetCoreTemplates/vue-spa/tree/main/MyApp.Client/src/_posts) 
 folder which each Markdown post containing its publish date and URL slug it should be published under, e.g:
 
-<file-layout :files="{
+<FileLayout :files="{
     _posts: { _: [
       '...',
       '2023-01-21_start.md',
       '2024-02-11_jwt-identity-auth.md',
       '2024-03-01_vite-press-plugin.md',
     ]},
-}"></file-layout>
+}"/>
 
 Supporting all Blog features requires several different pages to render each of its view:
 
@@ -217,13 +217,13 @@ The [/whatsnew](/whatsnew) page is an example of creating a custom Markdown feat
 where a new folder is created per release, containing both release date and release or project name, with all features in that release 
 maintained markdown content sorted in alphabetical order:
 
-<file-layout :files="{
+<FileLayout :files="{
   _whatsnew: {
     '2023-03-08_Animaginary': { _: ['feature1.md'] },
     '2023-03-18_OpenShuttle': { _: ['feature1.md'] },
     '2023-03-28_Planetaria':  { _: ['feature1.md'] },
   }
-}"></file-layout>
+}"/>
 
 What's New follows the same structure as Pages feature which is rendered in:
 
@@ -234,7 +234,7 @@ What's New follows the same structure as Pages feature which is rendered in:
 
 The videos feature maintained in the `_videos` folder allows grouping of related videos into different folder groups, e.g:
 
-<file-layout :files="{
+<FileLayout :files="{
   _videos: {
     'vue': {
        _: ['admin.md','autoquerygrid.md','components.md']
@@ -243,7 +243,7 @@ The videos feature maintained in the `_videos` folder allows grouping of related
        _: ['locode.md','bookings.md','nextjs.md']
     },
   }
-}"></file-layout>
+}"/>
 
 These can then be rendered as UI fragments using the `<VideoGroup>` component, e.g:
 
@@ -259,14 +259,14 @@ These can then be rendered as UI fragments using the `<VideoGroup>` component, e
 
 The includes feature allows maintaining reusable markdown fragments in the `_includes` folder, e.g:
 
-<file-layout :files="{
+<FileLayout :files="{
   _includes: {
     'features': {
        _: ['videos.md','whatsnew.md']
     },
     _: ['privacy.md']
   }
-}"></file-layout>
+}"/>
 
 
 Which can be included in other Markdown files with:
@@ -303,14 +303,14 @@ export default defineConfig({
 This will publish all the content of each content type in the year they were published in, along with an `all.json` containing
 all content published in that year as well aso for all time, e.g:
 
-<file-layout :files="{
+<FileLayout :files="{
   meta: {
     2022: { _: ['all.json','posts.json','videos.json'] },
     2023: { _: ['all.json','posts.json'] },
     2024: { _: ['all.json','posts.json','videos.json','whatsnew.json'] },
     _: ['all.json','index.json']
   }
-}"></file-layout>
+}"/>
 
 With this you can fetch the metadata of all the new **Blog Posts** added in **2023** from:
 
@@ -330,8 +330,7 @@ a Monthly Newsletter Email with all new content added within a specified period.
 
 ## Components in Markdown Pages
 
-The [Simple, Modern JavaScript](/posts/javascript) blog post is a good example showing how you can use Global Components 
-as well as import and reference components in Markdown pages:
+The [Simple, Modern JavaScript](/posts/javascript) blog post is a good example showing how you can import and reference components in Markdown pages:
 
 ```tsx
 <script setup>
@@ -343,7 +342,153 @@ import VueComponentGallery from "./components/VueComponentGallery.vue";
 import VueComponentLibrary from "./components/VueComponentLibrary.vue";
 </script>
 
-<Iconify icon="vscode-icons:file-type-js-official" />
 <hello name="Vue 3"></hello>
 <counter></counter>
 ```
+
+As well as use Global Components which don't need to be imported, e.g:
+
+```xml
+<FileLayout :files="{
+  _videos: {
+    'vue': {
+       _: ['admin.md','autoquerygrid.md']
+    },
+    'react': {
+       _: ['locode.md','bookings.md']
+    },
+  }
+}" />
+```
+
+#### Output
+
+<FileLayout :files="{
+  _videos: {
+    'vue': {
+       _: ['admin.md','autoquerygrid.md']
+    },
+    'react': {
+       _: ['locode.md','bookings.md']
+    },
+  }
+}" />
+
+
+## Markdown Containers
+
+Most of [VitePress Containers](https://vitepress.dev/guide/markdown#custom-containers) are also implemented, enabling
+rich markup to enhance markdown content and documentation universally across all Markdown App implementations:
+
+#### Input
+
+    :::info
+    This is an info box.
+    :::
+
+    :::tip
+    This is a tip.
+    :::
+
+    :::warning
+    This is a warning.
+    :::
+
+    :::danger
+    This is a dangerous warning.
+    :::
+
+#### Output
+
+:::info
+This is an info box.
+:::
+
+:::tip
+This is a tip.
+:::
+
+:::warning
+This is a warning.
+:::
+
+:::danger
+This is a dangerous warning.
+:::
+
+### Custom Title
+
+You can specify a custom title by appending the text right after the container type:
+
+#### Input
+
+```markdown
+:::danger STOP
+Danger zone, do not proceed
+:::
+```
+
+#### Output
+
+:::danger STOP
+Danger zone, do not proceed
+:::
+
+
+### copy
+
+The **copy** container is ideal for displaying text snippets in a component that allows for easy copying:
+
+#### Input
+
+    :::copy
+    Copy Me!
+    :::
+
+#### Output
+
+:::copy
+Copy Me!
+:::
+
+HTML or XML fragments can also be copied by escaping them first:
+
+#### Input
+
+    :::copy
+    `<PackageReference Include="ServiceStack" Version="8.*" />`
+    :::
+
+#### Output
+
+:::copy
+`<PackageReference Include="ServiceStack" Version="8.*" />`
+:::
+
+### sh
+
+Similarly the **sh** container is ideal for displaying and copying shell commands:
+
+#### Input
+
+    :::sh
+    npm run prerender
+    :::
+
+#### Output
+
+:::sh
+npm run prerender
+:::
+
+### YouTube
+
+For embedding YouTube Videos, optimally rendered using the `<LiteYouTube>` component, e.g:
+
+#### Input
+
+    :::youtube YIa0w6whe2U:::
+
+#### Output
+
+:::youtube YIa0w6whe2U:::

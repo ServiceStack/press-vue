@@ -32,8 +32,9 @@ export default function(md:MarkdownIt) {
             render(tokens:any, idx:any) {
                 const token = tokens[idx]
                 if (token.nesting === 1) {
+                    const useTitle = token.info.trim().substring(`${title} `.length).replace(/:+$/g,'') || title || 'TIP'
                     return `<div class="${cls||'tip'} custom-block">
-                                <p class="custom-block-title">${title||'TIP'}</p>`
+                                <p class="custom-block-title">${useTitle}</p>`
                 } else {
                     return `</div>`
                 }
@@ -48,22 +49,21 @@ export default function(md:MarkdownIt) {
             render(tokens:any, idx:any) {
                 const token = tokens[idx]
                 if (token.nesting === 1) {
-                    return `<include src="${token.info.trim().substring('include '.length).replace(/:+$/g,'')}"></include>`
+                    return `<Include src="${token.info.trim().substring('include '.length).replace(/:+$/g,'')}" />`
                 } else {
                     return ``
                 }
             }
         })
     }
-    function files() {
+    function youtube() {
         return ({
             render(tokens:any, idx:any) {
                 const token = tokens[idx]
-                console.log('files', token, idx)
                 if (token.nesting === 1) {
-                    return `<files>`
+                    return `<LiteYouTube id="${token.info.trim().substring('youtube '.length).replace(/:+$/g,'')}" />`
                 } else {
-                    return `</files>`
+                    return ``
                 }
             }
         })
@@ -78,7 +78,7 @@ export default function(md:MarkdownIt) {
     md.use(container, 'copy', copy({cls:'not-prose copy cp', icon:'bg-sky-500'}))
     md.use(container, 'sh', copy({cls:'not-prose sh-copy cp', box:'bg-gray-800', icon:'bg-green-600', txt:'whitespace-pre text-base text-gray-100'}))
     md.use(container, 'include', include())
-    md.use(container, 'files', files())
+    md.use(container, 'youtube', youtube())
     md.use(container, 'dynamic', {
         validate: () => true,
         render: function (tokens:any, idx:any) {
