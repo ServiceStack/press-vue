@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "postbuild": "node -e \"fs.copyFileSync('dist/index.html','dist/404.html')\""
   },
   "dependencies": {
     "@servicestack/client": "^2.1.1",

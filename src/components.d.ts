@@ -14,7 +14,6 @@ declare module 'vue' {
     FileLayout: typeof import('./components/FileLayout.vue')['default']
     FollowLinks: typeof import('./components/FollowLinks.vue')['default']
     GettingStarted: typeof import('./components/GettingStarted.vue')['default']
-    HelloApi: typeof import('./components/HelloApi.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
     Include: typeof import('./components/Include.vue')['default']
     MarkdownComponent: typeof import('./components/MarkdownComponent.vue')['default']
