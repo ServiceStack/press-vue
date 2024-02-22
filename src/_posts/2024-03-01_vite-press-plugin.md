@@ -327,3 +327,23 @@ Or **ALL** the website metadata content from:
 This feature makes it possible to support use-cases like CreatorKit's
 [Generating Newsletters](https://servicestack.net/creatorkit/portal-mailruns#generating-newsletters) feature which generates 
 a Monthly Newsletter Email with all new content added within a specified period.
+
+## Components in Markdown Pages
+
+The [Simple, Modern JavaScript](/posts/javascript) blog post is a good example showing how you can use Global Components 
+as well as import and reference components in Markdown pages:
+
+```tsx
+<script setup>
+import Hello from "./components/Hello.vue";
+import Counter from "./components/Counter.vue";
+import Plugin from "./components/Plugin.vue";
+import HelloApi from "./components/HelloApi.vue";
+import VueComponentGallery from "./components/VueComponentGallery.vue";
+import VueComponentLibrary from "./components/VueComponentLibrary.vue";
+</script>
+
+<Iconify icon="vscode-icons:file-type-js-official" />
+<hello name="Vue 3"></hello>
+<counter></counter>
+```
