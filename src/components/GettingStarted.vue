@@ -8,7 +8,7 @@
     <section class="w-full flex justify-center text-center">
       <div class="mb-2">
         <div class="flex justify-center text-center">
-          <a class="hover:no-underline netcoretemplates_empty" :href="zipUrl(`ServiceStack/${template}`)">
+          <a class="hover:no-underline" :href="zipUrl(`ServiceStack/${template}`)">
             <div
               class="bg-white dark:bg-gray-800 px-4 py-4 mr-4 mb-4 rounded-lg shadow-lg text-center items-center justify-center hover:shadow-2xl dark:border-2 dark:border-pink-600 dark:hover:border-blue-600"
               style="min-width:150px">
