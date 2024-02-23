@@ -8,7 +8,7 @@
         "lineCount": 9,
         "title": "Planetaria",
         "url": "http://planetaria.tech",
-        "image": "/img/whatsnew/planetaria.svg",
+        "image": "press-vue.servicestack.net/img/whatsnew/planetaria.svg",
         "group": "Planetaria"
     },
     {
@@ -20,7 +20,7 @@
         "lineCount": 8,
         "title": "OpenShuttle",
         "url": "https://example.org",
-        "image": "/img/whatsnew/open-shuttle.svg",
+        "image": "press-vue.servicestack.net/img/whatsnew/open-shuttle.svg",
         "group": "OpenShuttle"
     },
     {
@@ -31,8 +31,8 @@
         "wordCount": 86,
         "lineCount": 7,
         "title": "Animaginary",
-        "url": "/blog",
-        "image": "/img/whatsnew/animaginary.svg",
+        "url": "press-vue.servicestack.net/blog",
+        "image": "press-vue.servicestack.net/img/whatsnew/animaginary.svg",
         "group": "Animaginary"
     }
 ]
