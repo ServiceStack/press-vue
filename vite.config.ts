@@ -42,6 +42,9 @@ export default defineConfig({
             include: [/\.vue$/, /\.md$/],
         }),
         Press({
+            baseUrl: process.env.NODE_ENV === 'development'
+                ? 'https://localhost:5173'
+                : fs.existsSync('public/CNAME') ? fs.readFileSync('public/CNAME', 'utf-8').trim() : undefined,
             metadataPath: 'public/api',
         }),
         Layouts(),
