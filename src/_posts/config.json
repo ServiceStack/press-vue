@@ -1,6 +1,6 @@
 {
   "localBaseUrl": "http://localhost:5173",
-  "publicBaseUrl": "https://press-vue.web-templates.io",
+  "publicBaseUrl": "https://press-vue.servicestack.net",
   "siteTwitter": "@Vue",
   "blogTitle": "From the blog",
   "blogDescription": "Writing on software design and aerospace industry.",
