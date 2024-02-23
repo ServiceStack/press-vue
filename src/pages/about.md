@@ -1,5 +1,5 @@
 ---
-title: Template Features
+title: About this Template
 ---
 
 This template contains our essential recommendations for a modern Vue Single Page App optimal for both 
