@@ -14,7 +14,7 @@
             "summary": "Introducing the Vite Press Plugin for Vite Vue & React Apps",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1524668951403-d44b28200ce0?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "press-vue.servicestack.net/posts/vite-press-plugin"
+            "url": "https://press-vue.servicestack.net/posts/vite-press-plugin"
         },
         {
             "slug": "net8-best-blazor",
@@ -31,7 +31,7 @@
             "summary": "We explore the exciting new potential of Blazor in .NET 8 to develop fast, interactive Web Apps without compromise",
             "image": "https://images.unsplash.com/photo-1482686115713-0fbcaced6e28?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Gayle Smith",
-            "url": "press-vue.servicestack.net/posts/net8-best-blazor"
+            "url": "https://press-vue.servicestack.net/posts/net8-best-blazor"
         },
         {
             "slug": "net8-blazor-template",
@@ -48,7 +48,7 @@
             "summary": "The new Blazor for .NET 8 template streamlines web UI development in C#.",
             "image": "https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "press-vue.servicestack.net/posts/net8-blazor-template"
+            "url": "https://press-vue.servicestack.net/posts/net8-blazor-template"
         },
         {
             "slug": "razor-ssg-new-blog-features",
@@ -66,7 +66,7 @@
             "summary": "Explore the new Blogging Features in Razor SSG",
             "image": "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "press-vue.servicestack.net/posts/razor-ssg-new-blog-features"
+            "url": "https://press-vue.servicestack.net/posts/razor-ssg-new-blog-features"
         },
         {
             "slug": "razor-ssg",
@@ -84,7 +84,7 @@
             "summary": "Create fast, beautiful statically rendered Razor Websites & Blogs",
             "image": "https://images.unsplash.com/photo-1579767684138-a57e917d30aa?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Lucy Bates",
-            "url": "press-vue.servicestack.net/posts/razor-ssg"
+            "url": "https://press-vue.servicestack.net/posts/razor-ssg"
         },
         {
             "slug": "javascript",
@@ -100,7 +100,7 @@
             "summary": "Learn about JS Modules, Vue 3 and available rich UI Components",
             "image": "https://images.unsplash.com/photo-1497515114629-f71d768fd07c?crop=entropy&fit=crop&h=1000&w=2000",
             "author": "Brandon Foley",
-            "url": "press-vue.servicestack.net/posts/javascript"
+            "url": "https://press-vue.servicestack.net/posts/javascript"
         },
         {
             "slug": "start",
@@ -117,7 +117,7 @@
             "summary": "Found out how to use these template features",
             "author": "Gayle Smith",
             "image": "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "press-vue.servicestack.net/posts/start"
+            "url": "https://press-vue.servicestack.net/posts/start"
         },
         {
             "slug": "rider",
@@ -133,7 +133,7 @@
             "summary": "Setting up & exploring development workflow in Rider",
             "author": "Gayle Smith",
             "image": "https://images.unsplash.com/photo-1472289065668-ce650ac443d2?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "press-vue.servicestack.net/posts/rider"
+            "url": "https://press-vue.servicestack.net/posts/rider"
         },
         {
             "slug": "vs",
@@ -149,7 +149,7 @@
             "summary": "Exploring development workflow in VS Code and Visual Studio .NET",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "press-vue.servicestack.net/posts/vs"
+            "url": "https://press-vue.servicestack.net/posts/vs"
         },
         {
             "slug": "deploy",
@@ -165,7 +165,7 @@
             "summary": "Configuring your GitHub repo for SSH and CDN deployments",
             "author": "Gayle Smith",
             "image": "https://images.unsplash.com/photo-1485841890310-6a055c88698a?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "press-vue.servicestack.net/posts/deploy"
+            "url": "https://press-vue.servicestack.net/posts/deploy"
         },
         {
             "slug": "typography",
@@ -181,7 +181,7 @@
             "summary": "tailwindcss/typography enabled for Markdown pages",
             "author": "Lucy Bates",
             "image": "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "press-vue.servicestack.net/posts/typography"
+            "url": "https://press-vue.servicestack.net/posts/typography"
         },
         {
             "slug": "hetzner-cloud",
@@ -198,7 +198,7 @@
             "summary": "We've been using AWS at ServiceStack for 10+ years, it's served us well but suffers from complex & expensive pricing",
             "author": "Brandon Foley",
             "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&fit=crop&h=1000&w=2000",
-            "url": "press-vue.servicestack.net/posts/hetzner-cloud"
+            "url": "https://press-vue.servicestack.net/posts/hetzner-cloud"
         }
     ],
     "videos": [
@@ -273,7 +273,7 @@
             "lineCount": 9,
             "title": "Planetaria",
             "url": "http://planetaria.tech",
-            "image": "press-vue.servicestack.net/img/whatsnew/planetaria.svg",
+            "image": "https://press-vue.servicestack.net/img/whatsnew/planetaria.svg",
             "group": "Planetaria"
         },
         {
@@ -285,7 +285,7 @@
             "lineCount": 8,
             "title": "OpenShuttle",
             "url": "https://example.org",
-            "image": "press-vue.servicestack.net/img/whatsnew/open-shuttle.svg",
+            "image": "https://press-vue.servicestack.net/img/whatsnew/open-shuttle.svg",
             "group": "OpenShuttle"
         },
         {
@@ -296,8 +296,8 @@
             "wordCount": 86,
             "lineCount": 7,
             "title": "Animaginary",
-            "url": "press-vue.servicestack.net/blog",
-            "image": "press-vue.servicestack.net/img/whatsnew/animaginary.svg",
+            "url": "https://press-vue.servicestack.net/blog",
+            "image": "https://press-vue.servicestack.net/img/whatsnew/animaginary.svg",
             "group": "Animaginary"
         }
     ]

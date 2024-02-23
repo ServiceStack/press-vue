@@ -13,7 +13,7 @@
         "summary": "tailwindcss/typography enabled for Markdown pages",
         "author": "Lucy Bates",
         "image": "https://images.unsplash.com/photo-1497250681960-ef046c08a56e?crop=entropy&fit=crop&h=1000&w=2000",
-        "url": "press-vue.servicestack.net/posts/typography"
+        "url": "https://press-vue.servicestack.net/posts/typography"
     },
     {
         "slug": "hetzner-cloud",
@@ -30,6 +30,6 @@
         "summary": "We've been using AWS at ServiceStack for 10+ years, it's served us well but suffers from complex & expensive pricing",
         "author": "Brandon Foley",
         "image": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?crop=entropy&fit=crop&h=1000&w=2000",
-        "url": "press-vue.servicestack.net/posts/hetzner-cloud"
+        "url": "https://press-vue.servicestack.net/posts/hetzner-cloud"
     }
 ]

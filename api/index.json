@@ -1,13 +1,13 @@
 {
     "blog": [
-        "press-vue.servicestack.net/meta/2024/blog.json",
-        "press-vue.servicestack.net/meta/2023/blog.json",
-        "press-vue.servicestack.net/meta/2022/blog.json"
+        "https://press-vue.servicestack.net/meta/2024/blog.json",
+        "https://press-vue.servicestack.net/meta/2023/blog.json",
+        "https://press-vue.servicestack.net/meta/2022/blog.json"
     ],
     "videos": [
-        "press-vue.servicestack.net/meta/2023/videos.json"
+        "https://press-vue.servicestack.net/meta/2023/videos.json"
     ],
     "whatsNew": [
-        "press-vue.servicestack.net/meta/2023/whatsNew.json"
+        "https://press-vue.servicestack.net/meta/2023/whatsNew.json"
     ]
 }
