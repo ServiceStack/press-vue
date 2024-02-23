@@ -15,7 +15,7 @@ import { VueRouterAutoImports } from 'unplugin-vue-router'
 import Layouts from 'vite-plugin-vue-layouts'
 import Markdown from 'unplugin-vue-markdown/vite'
 import svgLoader from 'vite-svg-loader'
-import configureMarkdown from './vite.markdown'
+import configureMarkdown from './vite.config.markdown'
 
 const currentDir = path.dirname(fileURLToPath(import.meta.url))
 

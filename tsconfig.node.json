@@ -8,5 +8,5 @@
     "lib": ["ES2021", "DOM", "DOM.Iterable"],
     "strict": true
   },
-  "include": ["vite.*.ts"]
+  "include": ["vite.config.*"]
 }
