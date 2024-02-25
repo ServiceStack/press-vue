@@ -1,6 +1,15 @@
 {
     "blog": [
         {
+            "slug": "markdown-components-in-vue",
+            "fileName": "markdown-components-in-vue.md",
+            "date": "2024-03-02",
+            "tags": [],
+            "wordCount": 0,
+            "lineCount": 1,
+            "url": "https://press-vue.servicestack.net/posts/markdown-components-in-vue"
+        },
+        {
             "slug": "vite-press-plugin",
             "fileName": "vite-press-plugin.md",
             "date": "2024-03-01",
@@ -8,8 +17,8 @@
                 "docs",
                 "markdown"
             ],
-            "wordCount": 1973,
-            "lineCount": 487,
+            "wordCount": 2020,
+            "lineCount": 492,
             "title": "Vite Press Plugin",
             "summary": "Introducing the Vite Press Plugin for Vite Vue & React Apps",
             "author": "Lucy Bates",
