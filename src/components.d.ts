@@ -12,6 +12,7 @@ declare module 'vue' {
     BlogPosts: typeof import('./components/BlogPosts.vue')['default']
     BlogTitle: typeof import('./components/BlogTitle.vue')['default']
     FileLayout: typeof import('./components/FileLayout.vue')['default']
+    Files: typeof import('./components/Files.vue')['default']
     FollowLinks: typeof import('./components/FollowLinks.vue')['default']
     GettingStarted: typeof import('./components/GettingStarted.vue')['default']
     HelloWorld: typeof import('./components/HelloWorld.vue')['default']
