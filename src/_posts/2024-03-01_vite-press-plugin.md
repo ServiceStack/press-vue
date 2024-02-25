@@ -486,7 +486,7 @@ of the code-block to convert the structured ascii layout into a more familiar GU
     nextjs.md
 ```
 
-This benefit of this approach of marking up documentation is that the markdown content still remains in an optimal 
+The benefit of this approach of marking up documentation is that the markdown content still remains in an optimal 
 human-readable form even when the markdown renderer lacks the custom fenced components to render the richer UI.
 
 ## Components In Markdown
