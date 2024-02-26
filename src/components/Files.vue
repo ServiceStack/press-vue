@@ -10,15 +10,15 @@ const props = defineProps<{
 
 /* Takes an ascii string of indented folder and file paths:
 const from = `/meta
-    /2022
-        all.json
-        posts.json
-        videos.json
-    /2023
-        all.json
-        posts.json
+  /2022
     all.json
-    index.json`
+    posts.json
+    videos.json
+  /2023
+    all.json
+    posts.json
+  all.json
+  index.json`
 
 // and returns a nested object representing the file structure:
 const to = {
@@ -30,35 +30,25 @@ const to = {
 }
 */
 function parseFileStructure(ascii: string) {
-    const parseLineIndentation = (line:string) => {
-        const match = line.match(/^(\s*)/)
-        return match ? match[0].length / 2 : 0
-    }
-    const lines = ascii.trim().split("\n")
-    const root = {}
+    const lines = ascii.split('\n')
+    const root = { _: [] }
+    const stack = [root]
 
-    let currentPath: any = [root]
-    lines.forEach((line) => {
+    for (const line of lines) {
+        const depth = line.search(/\S/)/2
         const name = line.trim()
-        const isFile = name.includes(".")
-        const level = parseLineIndentation(line)
+        const parent:{[name:string]:any} = stack[depth]
 
-        // Navigate up the currentPath to find the current level's parent
-        while (level < currentPath.length - 1) {
-            currentPath.pop()
-        }
-
-        if (isFile) {
-            // Current Line is a file, add it to the files array (denoted by "_")
-            currentPath[level]._ ??= []
-            currentPath[level]._.push(name)
+        if (name.includes('.')) {
+            parent._.push(name)
         } else {
-            const dir = name.replace("/", "")
-            // Current Line is a folder, create a new object and update the currentPath
-            currentPath[level][dir] ??= {}
-            currentPath.push(currentPath[level][dir])
+            const newObj = { _: [] }
+            const dir = name.substring(1)
+            parent[dir] = newObj
+            stack.length = depth + 1
+            stack.push(newObj)
         }
-    })
+    }
     return root
 }
 
