@@ -219,6 +219,22 @@
     ],
     "videos": [
         {
+            "slug": "press-vue",
+            "fileName": "press-vue.md",
+            "date": "2023-03-06",
+            "tags": [
+                "vue",
+                "vite",
+                "markdown"
+            ],
+            "wordCount": 75,
+            "lineCount": 2,
+            "title": "Vite Vue Markdown Websites with Vite Press Plugin",
+            "url": "https://youtu.be/u3FcgWlack4",
+            "order": 1,
+            "group": "vue"
+        },
+        {
             "slug": "autoquerygrid",
             "fileName": "autoquerygrid.md",
             "date": "2023-03-16",
@@ -230,7 +246,7 @@
             "lineCount": 4,
             "title": "Instantly Manage your data using AutoQueryGrid Vue",
             "url": "https://youtu.be/znCoC-Ct0Ps",
-            "order": 1,
+            "order": 2,
             "group": "vue"
         },
         {
@@ -245,7 +261,7 @@
             "lineCount": 3,
             "title": "Vue 3 Tailwind Components Library",
             "url": "https://youtu.be/YIa0w6whe2U",
-            "order": 2,
+            "order": 3,
             "group": "vue"
         },
         {
@@ -260,7 +276,7 @@
             "lineCount": 4,
             "title": "Build beautiful custom .NET Admin UIs in minutes",
             "url": "https://youtu.be/wlRA4_owEsc",
-            "order": 3,
+            "order": 4,
             "group": "vue"
         },
         {
@@ -275,7 +291,7 @@
             "lineCount": 4,
             "title": "Modern Razor Pages & MVC .NET Tailwind templates",
             "url": "https://youtu.be/SyppvQB7IPs",
-            "order": 4,
+            "order": 5,
             "group": "vue"
         }
     ],
