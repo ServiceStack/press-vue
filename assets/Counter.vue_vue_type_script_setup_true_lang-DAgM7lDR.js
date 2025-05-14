@@ -1,0 +1,1 @@
+import{d as n,m as o,c as r,o as s,t as a}from"./index-Y9oC_L3a.js";const m=n({__name:"Counter",setup(c){const e=o(1);return(p,t)=>(s(),r("b",{onClick:t[0]||(t[0]=u=>e.value++)},"Counter "+a(e.value),1))}});export{m as _};
