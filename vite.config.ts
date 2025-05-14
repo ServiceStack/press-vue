@@ -6,13 +6,14 @@ import child_process from 'child_process'
 import { env } from 'process'
 
 import { defineConfig } from 'vite'
+import tailwindcss from '@tailwindcss/vite'
 import Vue from '@vitejs/plugin-vue'
 import Press, { matter } from "vite-plugin-press"
 import Components from 'unplugin-vue-components/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import VueRouter from 'unplugin-vue-router/vite'
 import { VueRouterAutoImports } from 'unplugin-vue-router'
-import Layouts from 'vite-plugin-vue-layouts'
+import Layouts from 'vite-plugin-vue-layouts-next'
 import Markdown from 'unplugin-vue-markdown/vite'
 import svgLoader from 'vite-svg-loader'
 import configureMarkdown from './vite.config.markdown'
@@ -41,6 +42,7 @@ export default defineConfig({
         Vue({
             include: [/\.vue$/, /\.md$/],
         }),
+        tailwindcss(),
         Press({
             baseUrl: process.env.NODE_ENV === 'development'
                 ? 'https://localhost:5173'
@@ -98,7 +100,6 @@ export default defineConfig({
     resolve: {
         alias: {
             '@': fileURLToPath(new URL('./src', import.meta.url)),
-            '@unhead/vue': path.join(currentDir, './node_modules/@unhead/vue'),
             '@servicestack/vue': path.join(currentDir, './node_modules/@servicestack/vue'),
         }
     }
